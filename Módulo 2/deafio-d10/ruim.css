@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+/* CORES DO SITE - MONOCROMÁTICO VERDE
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e */
+
+/* Fontes */
+
+@font-face {
+  font-family: android;
+  src: url('fontes/idroid.otf') format('opentype');
+  font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Bebas+Neue&family=Cookie&display=swap');
+
+:root {
+  --cor0: #c5ebd6;
+  --cor1: #83e1ad;
+  --cor2: #3ddc84;
+  --cor3: #2fa866;
+  --cor4: #1a5c37;
+  --cor5: #063d1e;
+
+  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+  --fonte-destaque: 'Bebas Neue', cursive;
+  --fonte-android: 'android', cursive;
+}
+
+body {
+  background-color: var(--cor0);
+  font-family: var(--fonte-padrao);
+}
+
+span {
+  color: #067302;
+  font-weight: bold;
+}
+
+a {
+  color: #067302;
+  font-weight: bold;
+  text-decoration: none;
+}
+header#cabecalho {
+  background-image: linear-gradient(to bottom, #62BF04, #078C03, #067302);
+  padding: 30px;
+}
+
+header#cabecalho > h1 {
+  text-align: center;
+  color: var(--cor3);
+  text-transform: uppercase;
+  font-family:  var(--fonte-destaque);
+  font-size: 2.5em;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header#cabecalho > p {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  width: 70%;
+  text-align: center;
+}
+
+nav#menu > a {
+  padding-left: 30px;
+  padding-right: 0;
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+main#principal, div#videodroid, div#final {
+  margin-left: 200px;
+  margin-right: 200px;
+  background-color: white;
+  padding: 15px;
+}
+
+article > h1 {
+  font-family: var(--fonte-android);
+  color: var(--cor5);
+}
+
+main#principal > p {
+  text-indent: 40px;
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main#principal > h2 {
+  color: #067302;
+  background-image: linear-gradient(to right, #95D904, #ffffff);
+  font-family: 'droid-font';
+  padding: 5px;
+}
+
+main#principal > img {
+  text-align: center;
+  width: 100%;
+}
+
+div#videodroid {
+  background-color: #078C03;
+  text-align: center;
+}
+
+#infos {
+  background-color: #a2db69;
+  padding: 0px 10px 10px 10px;
+}
+
+#infos > p {
+  text-indent: 40px;
+}
+
+#infos > h1 {
+  background-color: #078C03;
+  color: white;
+  padding: 8px;
+  font-size: 1.5em;
+}
+
+
+footer#rodape {
+  background-image: linear-gradient(to bottom, #62BF04, #078C03, #067302);
+  color: white;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1px;
+}
+

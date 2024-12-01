@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Midias </title>
+</head>
+<body>
+  <h1> Videos </h1>
+    <p> videos hospedados de servidores externos </p>
+    <p> inserindo videos do youtube </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/UOYndlGXXug?si=Y9GuDdYthF6dSJ6o&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <p> inserindo videos do vimeo </p>
+    <iframe src="https://player.vimeo.com/video/57756649?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="800" height="600" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="UMBANDA: Contos de areia(Guia da Luz)"></iframe>
+
+    <hr>
+    <p> vídeos hospedados localmente, no próprio servidor</p>
+    <video width="900" poster="videos/Vira tempo.jfif" controls>
+      <source src="videos/video720.mp4" type="video/mp4">
+      <source src="videos/Videowebm.webm" type="video/webm"> 
+      <source src="videos/videoogv.ogv" type="video/ogg"> 
+      <source src="videos/videomp4.mp4" type="video/mp4"> 
+      <p> seu navegador não tem compatibilidade com reprodução de vídeos </p>
+    </video>
+
+
+  <h1> Audios </h1>
+    <p> vamos aprender em reproduzir audios em HTML 5</p>
+    <audio src="audios/ToyShopping_JeremyKorpas.mp3" controls autoplay></audio>
+
+
+  <h1> Imagens Dinâmicas </h1>
+  <p> Tente abrir esse site em vários dispositivos diferentes ou simplesmente diminua o tamanho da tela do seu computador </p>
+  <picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto_p.png">
+    <source media="(max-width: 1050px)" srcset="imagens/foto_m.png">
+    <img src="imagens/foto_g.png" alt="imagem flexivel">
+  </picture>
+</body>
+</html>
