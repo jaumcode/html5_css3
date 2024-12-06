@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Medias </title>
+  <style>
+    table {
+      margin: auto;
+      width: 600px;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    .media, thead > tr > th {
+      background-color: rgb(94, 93, 93);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2" scope="rowgroup">Área</th>
+        <th rowspan="2" scope="rowgroup">Disciplina</th>
+        <th colspan="2" scope="rowgroup">Notas</th>
+        <th rowspan="2" scope="rowgroup">Média</th>
+      </tr>
+      <tr>
+        <th scope="rowgroup">Nota 1</th>
+        <th scope="rowgroup">Nota 2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="4" scope="colgroup"> Exatas </th>
+        <td>Matemática</td>
+        <td>9,5</td>
+        <td>7,5</td>
+        <td>8,5</td>
+      </tr>
+      <tr>
+        <td>Física</td>
+        <td>4,5</td>
+        <td>7,5</td>
+        <td>6,0</td>
+      </tr>
+      <tr>
+        <td>Química</td>
+        <td>5,0</td>
+        <td>9,0</td>
+        <td>7,0</td>
+      </tr>
+      <tr>
+        <td>Biologia</td>
+        <td>10,0</td>
+        <td>9,0</td>
+        <td>8,5</td>
+      </tr>
+      <tr>
+        <td class="media" colspan="4"> Média de Exatas </td>
+        <td>7,5</td>
+      </tr>
+
+      <tr>
+        <th rowspan="2" scope="colgroup"> Humanas </th>
+        <td>História</td>
+        <td>9,0</td>
+        <td>9,0</td>
+        <td>8,0</td>
+      </tr>
+      <tr>
+        <td>Geografia</td>
+        <td>8,5</td>
+        <td>9,5</td>
+        <td>9,0</td>
+      </tr>
+      <tr>
+        <td class="media" colspan="4"> Média de Humanas </td>
+        <td>8,5</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p> Segue para uma tabela <a href="tabelaresp.html"> responsiva </a></p>
+</body>
+</html>

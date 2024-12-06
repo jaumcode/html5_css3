@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    table {
+      margin: auto;
+      border-collapse: collapse;
+      width: 500px;
+    }
+
+    caption {
+      font-size: 1.6em;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+    <h1> Exercicio de Tabelas </h1>
+
+    <table>
+      <caption> Filmes Favoritos </caption>
+      <thead>
+        <tr>
+          <th scope="col"> Grupos </th>
+          <th scope="col"> Nomes </th>
+          <th colspan="3" scope="colgroup"> Filmes </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th rowspan="3" scope="rowgroup"> Mulheres </td>
+          <td>Ana Maria Santos</td>
+          <td>Alien</td>
+          <td>Rambo</td>
+          <td>Vingadores</td>
+        </tr>
+        <tr>
+          <td>Beatriz Souza</td>
+          <td>Hulk</td>
+          <td>Inception</td>
+          <td>Batman</td>
+        </tr>
+        <tr>
+          <td>Claúdia Melo</td>
+          <td>Oblivion</td>
+          <td>Matrix</td>
+          <td>Big Hero</td>
+        </tr>
+        <tr>
+          <th rowspan="3" scope="rowgroup"> Homens </td>
+          <td>Bruno Mendonça</td>
+          <td>Intocaveis</td>
+          <td>Amnésia</td>
+          <td>Gladiador</td>
+        </tr>
+        <tr>
+          <td>Daniel Lourenço</td>
+          <td>Jogos Vorazes</td>
+          <td>Divergente</td>
+          <td>Harry Potter</td>
+        </tr>
+        <tr>
+          <td>Fabricio Souza</td>
+          <td>Toy Story</td>
+          <td>Crepusculo</td>
+          <td>Alice no Pais das M</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p> Pagina do proximo <a href="desafio4.html"> desafio </a></p>
+</body>
+</html>
