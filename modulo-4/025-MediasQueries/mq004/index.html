@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" media="all">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="medias.css">
+  <title> Menu Responsivo </title>
+</head>
+<body onresize="mudouTamanho()">
+  <header>
+    <h1> Meu site </h1>
+    <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+    <menu id="itens">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Noticias</a></li>
+        <li><a href="#">Sobre nós</a></li>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="#">Sei lá</a></li>
+      </ul>
+    </menu>
+  </header>
+
+  <main>
+    <h1> Testando Media Queries </h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus similique quam magnam hic autem quaerat porro beatae doloribus provident odio placeat ducimus, tenetur ab, dolore eligendi excepturi nostrum harum doloremque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quae sunt deserunt praesentium nostrum incidunt nobis. Aspernatur, perspiciatis hic fuga sapiente ut repudiandae, exercitationem, nemo tempore quo odit saepe. Explicabo.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus similique quam magnam hic autem quaerat porro beatae doloribus provident odio placeat ducimus, tenetur ab, dolore eligendi excepturi nostrum harum doloremque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quae sunt deserunt praesentium nostrum incidunt nobis. Aspernatur, perspiciatis hic fuga sapiente ut repudiandae, exercitationem, nemo tempore quo odit saepe. Explicabo.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus similique quam magnam hic autem quaerat porro beatae doloribus provident odio placeat ducimus, tenetur ab, dolore eligendi excepturi nostrum harum doloremque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor quae sunt deserunt praesentium nostrum incidunt nobis. Aspernatur, perspiciatis hic fuga sapiente ut repudiandae, exercitationem, nemo tempore quo odit saepe. Explicabo.</p>
+  </main>
+
+  <script>
+    function clickMenu() {
+      if (itens.style.display == 'block') {
+        itens.style.display = 'none'
+      } else {
+        itens.style.display = 'block'
+      }
+    }
+
+    function mudouTamanho() {
+      if (window.innerWidth >= 768) {
+        itens.style.display = 'block'
+      } else {
+        itens.style.display = 'none'
+      }
+    }
+  </script>
+  
+</body>
+</html>
